@@ -1,19 +1,24 @@
 <html>
     <body id="urmom" style="background-color: dodgerblue;">
         <script>
+            var asdf = 101;
+            function cheese() {
+                asdf = 1;
+            }
             function die() {
-                    if (document.getElementById('urmom').getAttribute('style') == "background-color: dodgerblue;") {
+                    if (document.getElementById('urmom').getAttribute('style') == "background-color: dodgerblue;" && asdf <= 99) {
                         document.getElementById('urmom').style = 'background-color: brown';
-                        document.getElementById('funi').style = 'color: green';
+                        document.getElementById('funi').style = "font-family: Comic Sans MS, cursive, sans-serif; color: black";
                     }
-                    else if (document.getElementById('urmom').getAttribute('style') == "background-color: brown;") {
+                    else if (document.getElementById('urmom').getAttribute('style') == "background-color: brown;" && asdf <= 99) {
                         document.getElementById('urmom').style = 'background-color: dodgerblue';
-                        document.getElementById('funi').style = 'color: black';
+                        document.getElementById('funi').style = "font-family: Comic Sans MS, cursive, sans-serif; color: white";
                     }
+                    asdf++;
             }
             setInterval(die, 10)
         </script>
-        <h1 style="font-family: Comic Sans MS, cursive, sans-serif" onclick="die()" id="funi">You're Mom XD :sunglasses_cool:</h1>  
+        <h1 style="font-family: Comic Sans MS, cursive, sans-serif; color: white" onclick="cheese()" id="funi">You're Mom XD :sunglasses_cool:</h1>  
         <img src="EA_Sports_Blender.png" width="512" height="512">
     </body>
 </html>
