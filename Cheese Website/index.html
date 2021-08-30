@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | GamerCheese.com</title>
+
+    <style>
+        p,
+        h1,
+        h2,
+        h3,
+        ol,
+        strong {
+            font-family: Comic Sans MS, cursive, sans-serif;
+            background-color: Khaki;
+        }
+    </style>
+
+    <script>
+        function flash() {
+            if (document.getElementById('flashy').getAttribute('style') == "color: red;") {
+                document.getElementById('flashy').style = "color:orange;";
+            } else if (document.getElementById('flashy').getAttribute('style') == "color: orange;") {
+                document.getElementById('flashy').style = "color:yellow;";
+            } else if (document.getElementById('flashy').getAttribute('style') == "color: yellow;") {
+                document.getElementById('flashy').style = "color:green;";
+            } else if (document.getElementById('flashy').getAttribute('style') == "color: green;") {
+                document.getElementById('flashy').style = "color:blue;";
+            } else if (document.getElementById('flashy').getAttribute('style') == "color: blue;") {
+                document.getElementById('flashy').style = "color:purple;";
+            } else if (document.getElementById('flashy').getAttribute('style') == "color: purple;") {
+                document.getElementById('flashy').style = "color:red;";
+            }
+        }
+        setInterval(flash, 100)
+    </script>
+
+</head>
+
+<body style="background-image: url('Cheese\ n\ Crackers.png')">
+
+    <h1 style="text-align: center;"><strong>Cheese WEbsite</strong></h1>
+    <p>Hey guys welcome to my website about <em id="flashy" style="color: red;">cheese</em></p>
+    <p><q>I like cheese</q><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Yer Mum, 2016</p>
+    <p>Here is a haiku that I wrote about cheese:</p>
+    <pre
+        style="background-color: khaki;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheese is very good<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I like to eat lots of cheese<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your mom is so fat</pre>
+    <div style="background-color: khaki;"><h3>My Favorite Cheeses:</h3> <ol>
+        <li><a href="velveeta.html">Velveeta</a></li>
+        <li><a href="munster.html">Munster</a></li>
+        <li><a href="cheddar.html">Cheddar</a></li>
+        <li><a href="chocolatecheese.html">Chocolate Cheese</a></li>
+    </ol></div>
+    
+    <script>
+        flash()
+    </script>
+
+</body>
+
+</html>
