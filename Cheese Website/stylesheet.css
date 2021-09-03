@@ -10,6 +10,67 @@ strong {
 .asdf {
     display: inline-flex;
     background-color: khaki;
-    flex-direction: column;
+    flex-flow: row / wrap;
     padding: 10px;
+    margin: 10px;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    border: solid medium black;
 }
+.asdfcol {
+    display: inline-flex;
+    background-color: khaki;
+    flex-flow: column;
+    padding: 10px;
+    margin: 10px;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    border: solid medium black;
+}
+.asdfcenter {
+    display: flex;
+    background-color: khaki;
+    flex-flow: row / wrap;
+    padding: 10px;
+    margin: 10px;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    justify-content: center;
+    align-self: center;
+    border: solid medium black;
+    width: fit-content;
+}
+.bg {
+    display: inline-flex;
+    flex-direction: column;
+    font-family: Comic Sans MS, cursive, sans-serif;
+}
+.tab {
+    display: inline-flex;
+    background-color:khaki;
+    flex-flow: row wrap;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    justify-content: center;
+    align-self: center;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    border: solid medium black;
+}
+table,td {
+    border: solid medium black;
+}
+#rickRoll {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+  }
+
+  .content {
+    position: fixed;
+    top: 0;
+    left:0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
