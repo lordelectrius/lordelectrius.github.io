@@ -1,0 +1,29 @@
+.background {
+    display: flex;
+    flex-flow: row wrap;
+    /* background-color: peru; */
+    align-content: center;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    background-color: orange;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    padding: 10px;
+    border: medium solid black;
+    flex-flow: row wrap;
+}
+
+.table {
+    display: flex;
+    background-color: burlywood;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding:10px;
+}
+
+.break {
+    width: 100%;
+    border-style: none;
+}
