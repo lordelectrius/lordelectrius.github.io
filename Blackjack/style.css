@@ -25,7 +25,7 @@ body {
     flex-flow: column wrap;
     padding: 100px;
     width: 70%;
-    min-height: 500px;
+    min-height: 400px;
 }
 
 .break {
