@@ -85,18 +85,6 @@
     width: 100px;
 }
 
-/* .cardStatic {
-    display:flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    background-color: blanchedalmond;
-    border: black medium solid;
-    min-height: 300px;
-    width: 15%;
-    position:relative;
-    margin-left:auto;
-} */
-
 .flip-card {
     background-color: transparent;
     width: 15%;
