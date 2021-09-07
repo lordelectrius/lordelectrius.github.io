@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,85 @@
     <link rel="stylesheet" href="style.css">
     <title>Blackjack</title>
 </head>
+
 <body>
-    <main class="background">
+    <div class="background">
         <div class="title">
             <h1>Blackjack Website Thingy</h1>
         </div>
         <hr class="break">
         <section class="table">
-            <button id="hit">Hit</button>
-            <button id="stand">Stand</button>
+
+            <div class="container">
+
+                <div class="card1">
+                    <p class="number">Number</p>
+                    <p class="numberBottom">Number</p>
+                </div>
+
+                <div class="tab"></div>
+
+                <div class="card2">
+                    <p class="number">Number</p>
+                    <p class="numberBottom">Number</p>
+                </div> 
+
+                <div class="tab"></div>
+
+                <div class="flip-card" style="margin-left:0;visibility: hidden;animation: spin 1s 2s forwards">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="number">Number</p>
+                            <p class="numberBottom">Number</p>
+                        </div>
+                        <div class="flip-card-back">
+    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab"></div>
+
+                <div class="flip-card" style="margin-left:0;visibility: hidden;animation: spin 1s 3s forwards">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="number">Number</p>
+                            <p class="numberBottom">Number</p>
+                        </div>
+                        <div class="flip-card-back">
+    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab"></div>
+
+                <div class="flip-card" style="margin-left:0;visibility: hidden;animation: spin 1s 4s forwards">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="number">Number</p>
+                            <p class="numberBottom">Number</p>
+                        </div>
+                        <div class="flip-card-back">
+    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="break">
+            <hr class="break">
+            <hr class="break">
+
+            <div class="container" style="align-self: center;">
+                <button id="hit">Hit</button>
+                <div class="tab"></div>
+                <button id="stand">Stand</button>
+            </div>
+
         </section>
-    </main>
+    </div>
 </body>
+
 </html>
