@@ -6,6 +6,10 @@
     justify-content: center;
 }
 
+body {
+    background-color: brown;
+}
+
 .title {
     display: flex;
     background-color: orange;
@@ -19,7 +23,7 @@
     display: flex;
     background-color: burlywood;
     flex-flow: column wrap;
-    padding:100px;
+    padding: 100px;
     width: 70%;
     min-height: 500px;
 }
@@ -34,7 +38,7 @@
 }
 
 .card1 {
-    display:flex;
+    display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     background-color: blanchedalmond;
@@ -46,14 +50,14 @@
 }
 
 .card2 {
-    display:flex;
+    display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     background-color: blanchedalmond;
     border: black medium solid;
     min-height: 300px;
     width: 15%;
-    animation: spin 1s forwards 1s;
+    animation: spin1 1s forwards 1s;
     visibility: hidden;
     z-index: 1;
 }
@@ -68,7 +72,7 @@
     margin: 10px;
     transform: rotate(180deg);
     width: fit-content;
-    margin-left:auto;
+    margin-left: auto;
 }
 
 .container {
@@ -102,36 +106,142 @@
     transition: transform 0.8s;
     transform-style: preserve-3d;
     transform: rotateY(180deg);
-  }
+}
 
-  .flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner {
     transform: rotateY(0deg);
-  }
+}
 
-  .flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
-  }
+}
 
-  .flip-card-front {
-    display:flex;
+.flip-card-front {
+    display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     background-color: blanchedalmond;
     border: black medium solid;
-  }
+}
 
-  .flip-card-back {
+.flip-card-back {
     background-color: dodgerblue;
     border: black medium solid;
     transform: rotateY(180deg);
-  }
+}
 
 @keyframes spin {
-    0% {transform: rotate3d(0,0,0,0);position:relative;left:100%;visibility: visible;}
-    99% {transform: rotate3d(0,0.5,0.2,360deg);left:0px;visibility: visible;position:relative}
-    100% {position:static;visibility: visible;transform: rotate3d(0,0.5,0.2,360deg)}
+    0% {
+        transform: rotate3d(0, 0, 0, 0);
+        position: relative;
+        left: 100%;
+        visibility: visible;
+    }
+
+    99% {
+        transform: rotate3d(0, 0.5, 0.2, 360deg);
+        left: 0px;
+        visibility: visible;
+        position: relative
+    }
+
+    100% {
+        position: static;
+        visibility: visible;
+        transform: rotate3d(0, 0.5, 0.2, 360deg)
+    }
+}
+
+@keyframes spin1 {
+    0% {
+        transform: rotate3d(0, 0, 0, 0);
+        position: relative;
+        left: 80%;
+        visibility: visible;
+    }
+
+    99% {
+        transform: rotate3d(0, 0.5, 0.2, 360deg);
+        left: 0px;
+        visibility: visible;
+        position: relative
+    }
+
+    100% {
+        position: static;
+        visibility: visible;
+        transform: rotate3d(0, 0.5, 0.2, 360deg)
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate3d(0, 0, 0, 0);
+        position: relative;
+        left: 60%;
+        visibility: visible;
+    }
+
+    99% {
+        transform: rotate3d(0, 0.5, 0.2, 360deg);
+        left: 0px;
+        visibility: visible;
+        position: relative
+    }
+
+    100% {
+        position: static;
+        visibility: visible;
+        transform: rotate3d(0, 0.5, 0.2, 360deg)
+    }
+}
+
+@keyframes spin3 {
+    0% {
+        transform: rotate3d(0, 0, 0, 0);
+        position: relative;
+        left: 40%;
+        visibility: visible;
+    }
+
+    99% {
+        transform: rotate3d(0, 0.5, 0.2, 360deg);
+        left: 0px;
+        visibility: visible;
+        position: relative
+    }
+
+    100% {
+        position: static;
+        visibility: visible;
+        transform: rotate3d(0, 0.5, 0.2, 360deg)
+    }
+}
+
+@keyframes spin4 {
+    0% {
+        transform: rotate3d(0, 0, 0, 0);
+        position: relative;
+        left: 20%;
+        visibility: visible;
+    }
+
+    99% {
+        transform: rotate3d(0, 0.5, 0.2, 360deg);
+        left: 0px;
+        visibility: visible;
+        position: relative
+    }
+
+    100% {
+        position: static;
+        visibility: visible;
+        transform: rotate3d(0, 0.5, 0.2, 360deg)
+    }
 }
