@@ -26,6 +26,7 @@ body {
     padding: 100px;
     width: 70%;
     min-height: 400px;
+    padding-bottom: 50px;
 }
 
 .break {
@@ -43,7 +44,7 @@ body {
     justify-content: space-between;
     background-color: blanchedalmond;
     border: black medium solid;
-    min-height: 300px;
+    min-height: 250px;
     width: 15%;
     animation: spin 1s forwards;
     z-index: 1;
@@ -55,7 +56,7 @@ body {
     justify-content: space-between;
     background-color: blanchedalmond;
     border: black medium solid;
-    min-height: 300px;
+    min-height: 250px;
     width: 15%;
     animation: spin1 1s forwards 1s;
     visibility: hidden;
@@ -81,6 +82,12 @@ body {
     perspective: 1000px;
 }
 
+.containerCenter {
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+}
+
 #hit {
     width: 100px;
 }
@@ -92,7 +99,7 @@ body {
 .flip-card {
     background-color: transparent;
     width: 15%;
-    height: 300px;
+    height: 250px;
     perspective: 1000px;
     position: relative;
     margin-left: 0;
