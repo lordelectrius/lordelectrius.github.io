@@ -772,11 +772,11 @@ async function loss() {
     document.getElementById("loseScreen").style.visibility = "visible"
     document.getElementById("loseScreen").style.backgroundColor = "rgba(0.5,0.5,0.5,0.75)"
     document.getElementById("lossText").style.color = "rgba(153, 255, 0, 1)"
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 1500));
     resetGame()
     document.getElementById("loseScreen").style.backgroundColor = "rgba(0.5,0.5,0.5,0)"
     document.getElementById("lossText").style.color = "rgba(153, 255, 0, 0)"
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 1500));
     document.getElementById("loseScreen").style.visibility = "hidden"
 }
 
@@ -785,11 +785,11 @@ async function win() {
     document.getElementById("loseScreen").style.visibility = "visible"
     document.getElementById("loseScreen").style.backgroundColor = "rgba(0.5,0.5,0.5,0.75)"
     document.getElementById("winText").style.color = "rgba(153, 255, 0, 1)"
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 1500));
     resetGame()
     document.getElementById("loseScreen").style.backgroundColor = "rgba(0.5,0.5,0.5,0)"
     document.getElementById("winText").style.color = "rgba(153, 255, 0, 0)"
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 1500));
     document.getElementById("loseScreen").style.visibility = "hidden"
 }
 
