@@ -473,7 +473,7 @@ function generateRand() {
 }
 
 function generateRandHouse() {
-    let numberThing = Math.floor(Math.random() * 11 + 10)
+    let numberThing = Math.floor(Math.random() * 9 + 13)
     return numberThing
 }
 
