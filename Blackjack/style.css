@@ -25,7 +25,7 @@ body {
     flex-flow: column wrap;
     padding: 100px;
     width: 70%;
-    min-height: 400px;
+    min-height: 1vh;
     padding-bottom: 50px;
 }
 
@@ -44,7 +44,7 @@ body {
     justify-content: space-between;
     background-color: blanchedalmond;
     border: black medium solid;
-    min-height: 250px;
+    height: 350px;
     width: 15%;
     animation: spin 1s forwards;
     z-index: 1;
@@ -56,7 +56,7 @@ body {
     justify-content: space-between;
     background-color: blanchedalmond;
     border: black medium solid;
-    min-height: 250px;
+    height: 350px;
     width: 15%;
     animation: spin1 1s forwards 1s;
     visibility: hidden;
@@ -67,6 +67,8 @@ body {
     margin: 10px;
     width: 50%;
     width: fit-content;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    font-size: 25px;
 }
 
 .numberBottom {
@@ -74,6 +76,8 @@ body {
     transform: rotate(180deg);
     width: fit-content;
     margin-left: auto;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    font-size: 25px;
 }
 
 .container {
@@ -86,6 +90,39 @@ body {
     display: flex;
     justify-content: center;
     perspective: 1000px;
+    text-align: center;
+}
+
+#loseScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    margin:0;
+    left:0;
+    top:0;
+    z-index: 1000;
+    visibility: hidden;
+    transition: background-color 2s;
+}
+
+#lossText {
+    position:absolute;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    font-size: 100px;
+    color: rgba(153, 255, 0, 0);
+    transition: color 2s;
+}
+
+#winText {
+    position:absolute;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    font-size: 100px;
+    color: rgba(153, 255, 0, 0);
+    transition: color 2s;
 }
 
 #hit {
@@ -96,10 +133,14 @@ body {
     width: 100px;
 }
 
+#reset {
+    width: 100px;
+}
+
 .flip-card {
     background-color: transparent;
     width: 15%;
-    height: 250px;
+    height: 350px;
     perspective: 1000px;
     position: relative;
     margin-left: 0;
@@ -115,9 +156,9 @@ body {
     transform: rotateY(180deg);
 }
 
-.flip-card:hover .flip-card-inner {
+/* .flip-card:hover .flip-card-inner {
     transform: rotateY(0deg);
-}
+} */
 
 .flip-card-front,
 .flip-card-back {
