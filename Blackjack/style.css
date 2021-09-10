@@ -125,14 +125,14 @@ body {
 
 .images {
     width: 30%;
-    height: 13%;
+    height: 12%;
     backface-visibility: hidden;
     align-self: center;
 }
 
 .symbolSpacer {
     width: 30%;
-    height: 13%;
+    height: 12%;
     background-color: transparent;
 }
 

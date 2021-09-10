@@ -409,6 +409,7 @@ function updateCardSymbols(cardNumber, value) {
         symbol10f.style.visibility = "visible"
         symbol3f.style.transform = "rotate(180deg)"
         symbol4f.style.transform = "rotate(180deg)"
+        symbol6f.style.transform = "rotate(180deg)"
         symbol9f.style.transform = "rotate(180deg)"
         symbol10f.style.transform = "rotate(180deg)"
         if (suit == 0) {
