@@ -124,15 +124,15 @@ body {
 }
 
 .images {
-    width: 20%;
-    height: 10%;
+    width: 30%;
+    height: 13%;
     backface-visibility: hidden;
     align-self: center;
 }
 
 .symbolSpacer {
-    width: 20%;
-    height: 10%;
+    width: 30%;
+    height: 13%;
     background-color: transparent;
 }
 
