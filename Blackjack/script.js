@@ -3,6 +3,7 @@ function hit() {
     let score4 = parseInt(document.body.querySelector("#cardContainer div:nth-child(7) .number").textContent)
     let score5 = parseInt(document.body.querySelector("#cardContainer div:nth-child(9) .number").textContent)
     let score6 = parseInt(document.body.querySelector("#cardContainer div:nth-child(11) .number").textContent)
+    let score7 = parseInt(document.body.querySelector("#cardContainer div:nth-child(13) .number").textContent)
     if (score3 == 0) {
         score3 = generateRand();
         document.body.querySelector("#cardContainer div:nth-child(5) .number").textContent = score3
@@ -26,12 +27,19 @@ function hit() {
         console.log("Successfully Hit")
     } else if (score6 == 0) {
         score6 = generateRand();
-        document.body.querySelector("#cardContainer div:nth-child(11) .number").textContent = score5
-        document.body.querySelector("#cardContainer div:nth-child(11) .numberBottom").textContent = score5
+        document.body.querySelector("#cardContainer div:nth-child(11) .number").textContent = score6
+        document.body.querySelector("#cardContainer div:nth-child(11) .numberBottom").textContent = score6
         document.body.querySelector("#cardContainer div:nth-child(11) .flip-card-inner").style.transform = "rotateY(0deg)"
         updateCardSymbols(6, score6)
         console.log("Successfully Hit")
-    }
+    } else if (score7 == 0) {
+        score7 = generateRand();
+        document.body.querySelector("#cardContainer div:nth-child(13) .number").textContent = score7
+        document.body.querySelector("#cardContainer div:nth-child(13) .numberBottom").textContent = score7
+        document.body.querySelector("#cardContainer div:nth-child(13) .flip-card-inner").style.transform = "rotateY(0deg)"
+        updateCardSymbols(7, score7)
+        console.log("Successfully Hit")
+    } 
     calculateScore()
 }
 
@@ -49,6 +57,8 @@ function updateCardSymbols(cardNumber, value) {
         cardInQuestion = document.body.querySelector("#cardContainer div:nth-child(9) .flip-card-inner")
     } else if (cardNumber == 6) {
         cardInQuestion = document.body.querySelector("#cardContainer div:nth-child(11) .flip-card-inner")
+    } else if (cardNumber == 7) {
+        cardInQuestion = document.body.querySelector("#cardContainer div:nth-child(13) .flip-card-inner")
     }
 
     let suit = Math.floor(Math.random() * 4)
@@ -500,6 +510,7 @@ function calculateScore() {
     let score4 = document.body.querySelector("#cardContainer div:nth-child(7) .number").textContent
     let score5 = document.body.querySelector("#cardContainer div:nth-child(9) .number").textContent
     let score6 = document.body.querySelector("#cardContainer div:nth-child(11) .number").textContent
+    let score7 = document.body.querySelector("#cardContainer div:nth-child(13) .number").textContent
     let runningScore = 0;
 
     if (score1 != "A") {
@@ -519,6 +530,9 @@ function calculateScore() {
     }
     if (score6 != "A") {
         runningScore += parseInt(score6);
+    }
+    if (score7 != "A") {
+        runningScore += parseInt(score7);
     }
 
     if (score1 == "A") {
@@ -587,8 +601,19 @@ function calculateScore() {
     } else {
         score6 = parseInt(score6)
     }
+    if (score7 == "A") {
+        if (runningScore + 11 <= 21) {
+            score7 = 11;
+            runningScore += score7
+        } else {
+            score7 = 1
+            runningScore += score7
+        }
+    } else {
+        score7 = parseInt(score7)
+    }
 
-    let totalScore = score1 + score2 + score3 + score4 + score5 + score6;
+    let totalScore = score1 + score2 + score3 + score4 + score5 + score6 + score7;
     console.log("Score = " + totalScore)
     document.body.querySelector("#yourScore").textContent = totalScore;
     console.log("Score Updated")
@@ -622,12 +647,17 @@ function resetGame() {
     document.body.querySelector("#cardContainer div:nth-child(11) .numberBottom").textContent = 0
     document.body.querySelector("#cardContainer div:nth-child(11) .flip-card-inner").style.transform = "rotateY(180deg)"
 
+    document.body.querySelector("#cardContainer div:nth-child(13) .number").textContent = 0
+    document.body.querySelector("#cardContainer div:nth-child(13) .numberBottom").textContent = 0
+    document.body.querySelector("#cardContainer div:nth-child(13) .flip-card-inner").style.transform = "rotateY(180deg)"
+
     updateCardSymbols(1, 0)
     updateCardSymbols(2, 0)
     updateCardSymbols(3, 0)
     updateCardSymbols(4, 0)
     updateCardSymbols(5, 0)
     updateCardSymbols(6, 0)
+    updateCardSymbols(7, 0)
 
     document.body.querySelector("#E3C1S1").style.visibility = "hidden"
     document.body.querySelector("#E3C1S2").style.visibility = "hidden"
@@ -759,6 +789,27 @@ function resetGame() {
     document.body.querySelector("#E4C6S8").style.visibility = "hidden"
     document.body.querySelector("#E4C6S9").style.visibility = "hidden"
     document.body.querySelector("#E4C6S10").style.visibility = "hidden"
+    
+    document.body.querySelector("#E3C7S1").style.visibility = "hidden"
+    document.body.querySelector("#E3C7S2").style.visibility = "hidden"
+    document.body.querySelector("#E3C7S3").style.visibility = "hidden"
+    document.body.querySelector("#E3C7S4").style.visibility = "hidden"
+    document.body.querySelector("#E3C7S5").style.visibility = "hidden"
+    document.body.querySelector("#E3C7S6").style.visibility = "hidden"
+    document.body.querySelector("#E3C7S7").style.visibility = "hidden"
+    document.body.querySelector("#E3C7S8").style.visibility = "hidden"
+    document.body.querySelector("#E3C7S9").style.visibility = "hidden"
+
+    document.body.querySelector("#E4C7S1").style.visibility = "hidden"
+    document.body.querySelector("#E4C7S2").style.visibility = "hidden"
+    document.body.querySelector("#E4C7S3").style.visibility = "hidden"
+    document.body.querySelector("#E4C7S4").style.visibility = "hidden"
+    document.body.querySelector("#E4C7S5").style.visibility = "hidden"
+    document.body.querySelector("#E4C7S6").style.visibility = "hidden"
+    document.body.querySelector("#E4C7S7").style.visibility = "hidden"
+    document.body.querySelector("#E4C7S8").style.visibility = "hidden"
+    document.body.querySelector("#E4C7S9").style.visibility = "hidden"
+    document.body.querySelector("#E4C7S10").style.visibility = "hidden"
 
     document.getElementById("houseScore").textContent = "???";
 
